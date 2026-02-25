@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #ec4699;
+  --color-primary-dark: #be185d;
+  --color-background-light: #f8f6f7;
+  --color-background-dark: #09090b;
+  --color-surface-dark: #18181b;
+  --color-surface-border: #27272a;
+
+  --font-display: "Inter", sans-serif;
+
+  --shadow-glow: 0 0 20px -5px rgba(236, 70, 153, 0.5);
+  --shadow-glow-lg: 0 0 40px -10px rgba(236, 70, 153, 0.4);
+
+  --animate-fade-in: fade-in 1s ease-out;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+:root {
+  --background: #09090b;
+  --foreground: #ffffff;
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.perspective-container {
+  perspective: 2000px;
+}
+
+.tilted-mockup {
+  transform: rotateX(20deg) rotateY(0deg) scale(0.9);
+  transform-style: preserve-3d;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    0 0 100px -20px rgba(236, 70, 153, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s ease-out;
+}
+
+.tilted-mockup:hover {
+  transform: rotateX(10deg) rotateY(0deg) scale(0.95);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, #27272a 1px, transparent 1px),
+    linear-gradient(to bottom, #27272a 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+}
+
+.glass-panel {
+  background: rgba(24, 24, 27, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
