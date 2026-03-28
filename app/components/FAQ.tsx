@@ -29,7 +29,7 @@ export default function FAQ() {
               </span>
             </summary>
             <p className="mt-4 leading-relaxed text-slate-400 mb-4">
-              We recommend Windows 10 or 11, 16GB RAM, and a dedicated GPU
+              We recommend Windows 10 or 11, 16GB RAM, and a GPU preffered
               (NVIDIA GTX 1060 or better) for optimal performance. It runs on
               CPU-only modes but will be slower.
             </p>
@@ -60,10 +60,8 @@ export default function FAQ() {
               </span>
             </summary>
             <p className="mt-4 leading-relaxed text-slate-400 mb-4">
-              Yes, you bring your own free Google Gemini API key. We provide a
-              step-by-step tutorial inside the app. Gemini 1.5 Flash gives you
-              1,500 free requests per day, meaning your AI costs are essentially
-              $0.
+              Yes, you bring your own free OpenAI API key. We provide a
+              step-by-step tutorial inside the app.
             </p>
           </details>
         </div>

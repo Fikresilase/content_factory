@@ -44,7 +44,7 @@ export default function Pricing() {
                 <span className="material-symbols-outlined text-slate-500 text-lg">
                   check
                 </span>
-                BYO Gemini API Key
+                BYO OpenAI API Key
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-300 opacity-60">
                 <span className="material-symbols-outlined text-red-400 text-lg">
@@ -56,7 +56,7 @@ export default function Pricing() {
                 <span className="material-symbols-outlined text-red-400 text-lg">
                   close
                 </span>
-                <span>Stealth Mode Disabled</span>
+                <span>No dedicated support</span>
               </div>
             </div>
           </div>
@@ -103,12 +103,7 @@ export default function Pricing() {
                   </span>
                   <strong>No Watermarks</strong>
                 </div>
-                <div className="flex items-start gap-3 text-sm text-slate-300">
-                  <span className="material-symbols-outlined text-primary text-lg">
-                    check_circle
-                  </span>
-                  <strong>Unlock Stealth Mode</strong>
-                </div>
+
                 <div className="flex items-start gap-3 text-sm text-slate-300">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
@@ -119,18 +114,17 @@ export default function Pricing() {
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  Windows 10/11 Installer (.exe)
+                  BYO OpenAI API Key
+                </div>
+                <div className="flex items-start gap-3 text-sm text-slate-300">
+                  <span className="material-symbols-outlined text-primary text-lg">
+                    check_circle
+                  </span>
+                  Dedicated Email Support
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-xs text-slate-500">
-            Secure payment via Stripe & Polar.sh. <br />
-            30-Day Money Back Guarantee.
-          </p>
         </div>
       </div>
     </section>
