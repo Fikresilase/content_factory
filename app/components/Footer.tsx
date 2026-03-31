@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="py-12 border-t border-surface-border bg-black">
@@ -11,21 +13,21 @@ export default function Footer() {
               cut
             </span>
           </div>
-          <span className="font-bold text-slate-200">Content Factory</span>
+          <span className="font-bold text-slate-200">Viralclip</span>
         </div>
         <div className="flex gap-6 text-sm text-slate-500">
-          <a className="hover:text-white" href="#">
+          <Link className="hover:text-white" href="/privacy">
             Privacy Policy
-          </a>
-          <a className="hover:text-white" href="#">
+          </Link>
+          <Link className="hover:text-white" href="/terms">
             Terms of Service
-          </a>
+          </Link>
           <a className="hover:text-white" href="#">
             Twitter
           </a>
         </div>
         <div className="text-sm text-slate-600">
-          © 2026 Content Factory. All rights reserved.
+          © 2026 Viralclip. All rights reserved.
         </div>
       </div>
     </footer>

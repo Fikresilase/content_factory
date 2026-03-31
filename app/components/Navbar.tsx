@@ -4,14 +4,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-surface-border bg-background-dark/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <div className="w-8 h-8 rounded bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white">
             <span className="material-symbols-outlined text-xl">cut</span>
           </div>
           <span className="font-bold text-lg tracking-tight">
-            Content Factory
+            Viralclip
           </span>
-        </div>
+        </Link>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
           <a className="hover:text-white transition-colors" href="#features">
             Features

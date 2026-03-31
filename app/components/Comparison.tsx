@@ -77,7 +77,7 @@ export default function Comparison() {
               <span className="material-symbols-outlined text-3xl text-primary">
                 desktop_windows
               </span>
-              <h3 className="text-xl font-bold text-white">Content Factory</h3>
+              <h3 className="text-xl font-bold text-white">Viralclip</h3>
             </div>
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
@@ -100,7 +100,7 @@ export default function Comparison() {
                     Unlimited Processing
                   </strong>
                   <span className="text-sm text-slate-400">
-                    Process 10 hours of video a day. We don't care.
+                    Process 10 hours of video a day. We don&apos;t care.
                   </span>
                 </div>
               </li>

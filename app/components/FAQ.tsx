@@ -14,7 +14,7 @@ export default function FAQ() {
               </span>
             </summary>
             <p className="mt-4 leading-relaxed text-slate-400 mb-4">
-              Currently, Content Factory is a Windows-exclusive application
+              Currently, Viralclip is a Windows-exclusive application
               optimized for CUDA (NVIDIA) and DirectX acceleration. A Mac
               version is in development for late 2026.
             </p>

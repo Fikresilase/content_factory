@@ -4,7 +4,7 @@ import "@fontsource-variable/material-symbols-outlined";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Content Factory - Own Your AI Clipper",
+  title: "Viralclip - Own Your AI Clipper",
   description: "Unlimited local processing. No monthly fees. 100% Privacy.",
 };
 
